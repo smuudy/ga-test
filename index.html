@@ -11,7 +11,7 @@
       var url_param = new URLSearchParams(window.location.search).get('ip');
 
       // Send custom dimension event
-      gtag('event', 'label', {'ip': url_param});
+      gtag('event', 'label', url_param);
 
     </script>
     <title>Good page</title>
