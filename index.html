@@ -1,25 +1,12 @@
 <html>
 <head>
-    <!-- Include from CDN -->
-    <script src="https://unpkg.com/analytics/dist/analytics.min.js"></script>
-    <!-- Include plugins -->
-    <script src="https://unpkg.com/@analytics/google-analytics/dist/@analytics/google-analytics.min.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-C7BKSCNPZD"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    <script type="text/javascript">
-      /* Initialize analytics */
-      var Analytics = _analytics.init({
-        app: 'analytics-html-demo',
-        debug: true,
-        version: 100,
-        plugins: [
-          analyticsGa({
-            trackingId: 'G-C7BKSCNPZD'
-          })
-        ]
-      })
-
-      /* Then use */
-      Analytics.page()
+      gtag('config', 'G-C7BKSCNPZD');
     </script>
     <title>Good page</title>
 </head>
